@@ -4,18 +4,19 @@ import java.util.*;
     //Create a question AND a solution to that question
 
     //Give instructions for your problem below:
+    // write a program that takes a sentence input from the user, and then the user
+    //inputs a letter, and then it prints how many times that letter appears.
 
 public class App {
     public static void main(String[] args) throws Exception {
-        //Write setup code (if needed)
-        Scanner reader = new Scanner(System.in);
-        
-
-
-
-
-
-        // ######################################
-        // Leave room to complete code below
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Give a sentence");
+        String input = scanner.nextLine();
+        input="."+input+".";
+        System.out.println("Give a letter");
+        String letter = scanner.nextLine();
+        String[] sentence=input.split(letter);
+        System.out.println(sentence.length-1);
     }
-}
+    }
+
